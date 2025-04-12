@@ -1,0 +1,75 @@
+/* Light Mode (default) */
+:root {
+    --background: lightblue;
+    --text-color: #333;
+    --verse-bg: #fff;
+    --verse-text: #333;
+    --header-bg: #fff;
+    --header-text: #333;
+  }
+  
+  /* Dark Mode */
+  [data-theme="dark"] {
+    --background: #121212;
+    --text-color: #e0e0e0;
+    --verse-bg: #333;
+    --verse-text: #fff;
+    --header-bg: #222;
+    --header-text: #fff;
+  }
+  
+  /* Apply background and text colors globally */
+  body {
+    background-color: var(--background);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    padding: 1rem;
+  }
+  
+  /* Header Styling */
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  /* Daily Verse Container */
+  .daily-verse {
+    background-color: var(--verse-bg);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #verse {
+    font-size: 1.25rem;
+    color: var(--verse-text);
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+  
+  /* Mode Toggle Styles */
+  .mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1rem;
+  }
+  
+  select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
